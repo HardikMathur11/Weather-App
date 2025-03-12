@@ -140,10 +140,14 @@ body {
     display: none;
 }
 
-/* 📌 Responsive Design */
+/
 @media (max-width: 450px) {
+
+    .body{
+        padding:10px;
+    }
     .card {
-        padding: 5%;
+        padding: 4%;
     }
 
     .search input {
