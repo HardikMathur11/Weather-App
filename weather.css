@@ -6,9 +6,10 @@
 }
 
 body {
+    display: flex; 
     background: linear-gradient(135deg, #1e1e1e, #3a3a3a);
+    background-color: #1e1e1e; /* Ensure background color is applied */
     color: #fff;
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -141,6 +142,12 @@ body {
 
 /* 📌 Responsive Design */
 @media (max-width: 450px) {
+
+      body {
+        background: linear-gradient(135deg, #1e1e1e, #3a3a3a) !important; 
+        background-color: #1e1e1e !important;
+    }
+    
     .card {
         padding: 30px 25px;
     }
