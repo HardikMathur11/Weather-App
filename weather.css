@@ -168,6 +168,12 @@ body {
         font-size: 1.8em;
     }
 
+    .details{
+    margin-right : 10px;
+
+}
+        
+
     .col img {
         width: 40px;
     }
