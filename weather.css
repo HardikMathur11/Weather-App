@@ -33,6 +33,7 @@ body {
 }
 
 /* Search Bar */
+
 .search {
     display: flex;
     align-items: center;
@@ -40,7 +41,10 @@ body {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     padding: 5px;
-    overflow: hidden; 
+    width: 100%;
+    max-width: 350px; /* Ensure a proper width */
+    overflow: hidden;
+    position: relative; /* Ensure elements stay inside */
 }
 
 .search input {
@@ -49,9 +53,10 @@ body {
     background: transparent;
     color: #fff;
     padding: 12px 18px;
-    height: 50px;
-    flex: 1;
-    font-size: 18px;
+    height: 45px;
+    flex-grow: 1; /* Allow input to take space */
+    font-size: 16px;
+    min-width: 0; /* Prevent input from forcing button out */
 }
 
 .search button {
@@ -59,18 +64,21 @@ body {
     outline: none;
     background: #fff;
     border-radius: 50%;
-    width: 45px; 
-    height: 45px; 
+    width: 40px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-shrink: 0;
-    margin-right: 5px; 
+    flex-shrink: 0; /* Prevent shrinking */
+    cursor: pointer;
+    position: relative;
+    margin-right: 5px;
 }
 
 .search button img {
-    width: 20px; 
-    height: 20px;
+    width: 18px; /* Ensure icon is visible */
+    height: 18px;
+    object-fit: contain; /* Prevent distortion */
 }
 
 
