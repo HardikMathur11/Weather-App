@@ -15,7 +15,7 @@ body {
     padding: 20px;
 }
 
-/* Card Styling */
+
 .card {
     width: 90%;
     max-width: 420px;
@@ -82,7 +82,7 @@ body {
     width: 24px;
 }
 
-/* Weather Details */
+
 .weather {
     display: none;
     margin-top: 20px;
@@ -104,7 +104,7 @@ body {
     margin-top: -10px;
 }
 
-/* Details Section */
+
 .details {
     display: flex;
     align-items: center;
@@ -139,7 +139,7 @@ body {
     display: none;
 }
 
-/* 📌 Responsive Design */
+
 @media (max-width: 450px) {
     .card {
         padding: 30px 25px;
@@ -156,7 +156,7 @@ body {
     }
 
     .search button img {
-        width: 20px; /* 🔥 Fixed small icon issue */
+        width: 20px; 
     }
 
     .weather h1 {
