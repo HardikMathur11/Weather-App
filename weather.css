@@ -34,14 +34,13 @@ body {
 
 /* Search Bar */
 .search {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 30px;
     padding: 5px;
-    backdrop-filter: blur(10px);
+    overflow: hidden; 
 }
 
 .search input {
@@ -55,32 +54,39 @@ body {
     font-size: 18px;
 }
 
-.search input::placeholder {
-    color: #ccc;
-}
-
 .search button {
     border: none;
     outline: none;
     background: #fff;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    cursor: pointer;
-    transition: 0.3s;
+    width: 45px; 
+    height: 45px; 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
+    margin-right: 5px; 
 }
+
+.search button img {
+    width: 20px; 
+    height: 20px;
+}
+
+
+
+.search input::placeholder {
+    color: #ccc;
+}
+
+
 
 .search button:hover {
     background: #f8f9fa;
     transform: scale(1.1);
 }
 
-.search button img {
-    width: 24px;
-}
+
 
 
 .weather {
