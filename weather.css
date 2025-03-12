@@ -140,14 +140,10 @@ body {
     display: none;
 }
 
-/
-@media (max-width: 450px) {
-
-    .body{
-        padding:10px;
-    }
+/* 📌 Responsive Design */
+@media (max-width: 600px) {
     .card {
-        padding: 4%;
+        padding: 5%;
     }
 
     .search input {
@@ -172,12 +168,6 @@ body {
         font-size: 1.8em;
     }
 
-    .details{
-    margin-right : 10px;
-
-}
-        
-
     .col img {
         width: 40px;
     }
@@ -185,5 +175,6 @@ body {
     .humidity,
     .wind {
         font-size: 1.4em;
+        word-wrap: break-word; /* Ensure text wraps within the container */
     }
 }
