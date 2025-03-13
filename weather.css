@@ -5,9 +5,8 @@
     box-sizing: border-box;
 }
 
-
 body {
-    background: linear-gradient(135deg, #e74c3c, #3498db, #f39c12, #9b59b6);
+    background: linear-gradient(135deg, #2c2b6e, #6247aa, #957fef); /* Purple-Blue Gradient */
     color: #fff;
     display: flex;
     justify-content: center;
@@ -15,24 +14,31 @@ body {
     min-height: 100vh;
     padding: 15px;
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
 }
+
 @keyframes gradient {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .card {
     width: 100%;
     max-width: 420px;
-    background: linear-gradient(135deg, #f1c40f, #e67e22);
+    background: linear-gradient(135deg, #3a2d85, #6e56c3); 
     border-radius: 15px;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
     margin: 10px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+}
 
 .search {
     width: 100%;
